@@ -1,0 +1,179 @@
+/*variables*/
+
+
+:root { 
+
+    /* colours */
+
+    --black : rgba(1, 1, 1, 1); 
+    --licorice : rgba(17, 17, 17, 1); 
+    --pixie-powder : rgba(53, 20, 166,1); 
+    --fuscous-gray: rgba(81, 81, 81,  1); 
+    --chicago: rgba(88, 88, 88, 1); 
+    --au-chico: rgba(157, 93, 93, 1); 
+    --silver-chalice: rgba(175, 175, 175, 1);
+    --buddha-gold: rgba(194, 146, 6, 1); 
+    --mercury :  rgba(228, 228, 228, 1);
+    --gray-nurse: rgba(233, 233, 233, 1); 
+    --fire-bush: rgba(238, 157, 36, 1); 
+    --white-lilac:rgba(246, 248, 252, 1); 
+    --white: rgba(255, 255, 255, 1); 
+
+
+/* fonts */
+
+/*fs  */
+
+    --fs-xs: 16px;   
+    --fs-s: 18px;  
+    --fs-m: 20px;  
+    --fs-l: 25px;   
+    --fs-xl: 33px; 
+    --fs-xxl: 40px; 
+    --fs-xxxl: 60px; 
+
+     /* ff  */
+
+   --ff-mon: "Montaga" ; 
+   --ff-nu_sans: "Nunito Sans" ; 
+
+}
+
+/* media queries */
+/* 
+@media (min-width: 35em) {
+    :root {
+        --fs-800: 5rem;
+        --fs-700: 2.5rem;
+        --fs-600: 1.5rem;
+        --fs-500: 1.25rem;
+        --fs-400: 1rem;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        /* font-sizes */
+        /* --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem; */
+    /* } */
+
+/*try writing your media quries in a different css file and make sure it only downloads according to the device screen size or wheter its in  landscape mode or its in potrait mode*/
+
+
+
+
+
+    /* Classes  */
+.nu_nm_black_20px { 
+
+    color: var(--black) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-m);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nu_nm_white_20px { 
+
+    color: var(--white) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-m);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nu_nm_sm_black_40px { 
+
+    color: var(--black) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-xxl);
+    font-weight: 600;
+    font-style: normal;
+}
+.nu_ex_bold_silver-chalice_20px { 
+
+    color: var(--silver-chalice) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-m);
+    font-weight: 800;
+    font-style: normal;
+}
+
+.nu_sm_bold_licorice_25px { 
+
+    color: var(--licorice) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-xxl);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nu_bold_white_20px { 
+
+    color: var(--white) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-m);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nu_bold_licorice_33px { 
+
+    color: var(--licorice) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.nu_bold_sm_white_20px { 
+
+    color: var(--white) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-m);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nu_bold_black_20px { 
+
+    color: var(--black) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-m);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nu_bold_sm_black_70px { 
+
+    color: var(--black) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: 70px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nu_bold_sm_licorice_60px { 
+
+    color: var(--licorice) ;  
+    font-family: var(--ff-nu_sans) ;
+    font-size: var(--fs-xxxl);
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.mon_nm_silver-chalice_20px {
+color: var(--silver-chalice);
+font-family: var(--ff-mon);
+font-size: var(--fs-m);
+font-weight: 400;
+font-style: normal;
+
+
+}
