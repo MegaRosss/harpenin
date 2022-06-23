@@ -19,6 +19,7 @@
     --fire-bush: rgba(238, 157, 36, 1); 
     --white-lilac:#f6f8fc; 
     --white: rgba(255, 255, 255, 1); 
+    
 
 
 /* fonts */
@@ -44,6 +45,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    // overflow-x: hidden;
 }
 
 /* Reset margins */
@@ -316,6 +318,9 @@ nav{
         color: transparent;
         -webkit-text-stroke: .5px var(--pixie-powder);
         text-shadow: 2px 4px  var(--black);
+
+        // try using the text shadow property very well like read more on it you can recreate that design with it 
+
         
     }
 
@@ -398,11 +403,35 @@ nav{
     // }
 .purpleback{
     background-color: #3514A6;
-    opacity: 0.4;
+    // opacity: 0.99;
     border-radius: 50%;
-    filter: blur(500px);
+    filter: blur(55px);
+    position: relative;
+    top: 80px;
     z-index: -1;
-}
+
+
+  
+    // background-image: radial-gradient(circle,  #846ecd,  #eeebf9, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+        // add the radial gradient here #5f44ba,
+
+            // filter: drop-shadow(20px 20px 500px black);
+
+            // color: red;
+            // font-size: 90px;
+            // position: absolute;
+            // top: 0; left: 0;
+            // margin: 0;
+            // color: var(--pixie-powder);
+
+        } 
+
+        .purpleback ~ h3{
+            color: #3514A6;
+        }
+    
+
+
     .nu_bold_sm_licorice_35px { 
 
         color: var(--licorice) ;  
@@ -421,32 +450,247 @@ nav{
     //     font-weight: 600;
     //     font-style: normal;
     // }
-.evenluv > h1{
-         color: var(--black) ;  
-        font-family: var(--ff-primary) ;
-     font-size: var(--fs-xxl);
-         font-weight: 600;
-        font-style: normal;
+.evenluv {
+    h1{
+        color: var(--black) ;  
+       font-family: var(--ff-primary) ;
+    font-size: var(--fs-xxl);
+        font-weight: 600;
+       font-style: normal;
+
+   
+}
+p{
+    margin: 0;
+}
 }
 .boderarea{
-    margin: 30px auto;
+    margin: 10px auto;
 
     // add padding and margin between each section using the section tag
 
 }
-.gridarea{
+.scroll{
     display: grid;
-    grid-template-columns: repeat(5, 30px);
-    grid-auto-flow: column;
     gap: 1rem;
-    // height: 20rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 36%;
+    overflow-x: auto;
+
+}
+.flexarea{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    // margin-inline: 1rem;
+    gap: 1rem;
+    inline-size: 55rem;
+    overflow-x: scroll;
+    .grid_child{
+        border-radius: 1rem;
+        border: solid 2px var( --silver-chalice);
+        // background: #3514A6;
+        min-width: fit-content;
+        padding: 5px 20px;
+
+        &:hover{
+            background-color: var(--fire-bush);
+            border: solid 2px white;
+        }
+        
+    }
+
+    
+
 
 }
 
-.gridarea > li{
-    background-color: #3514A6;
-    // padding: 5px 15px;
+.linkbx{
+    margin: 2rem auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+
+    .greyarea{
+        background-color: var(--gray-nurse);
+        padding: 20px;
+        margin-block: 10px;
+        border-radius: .5rem;
+        display: flex;
+
+        p{
+            margin-left: 1rem;
+            color: var(--licorice) ;  
+            font-family: var(--ff-nu_sans) ;
+            font-size: var(--fs-s);
+            font-weight: 600;
+            font-style: normal;
+            
+        }
+        
+        } 
+}
+
+.purplelink{
+ color: var(--pixie-powder);
+text-align: center;
+padding: 2rem auto;
+
+}
+
+
+
+
+.trybe{
+    background-color: var(--fire-bush);
+    background-image: 
+    url(./pngs/trybe.png),
+    url(./pngs/trybe2.png)
+    
+    ;
+    background-size: contain, 5em;
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+     bottom right,
+     top 28em left 2em
+
+    ;
+    min-height: 586px;
+
+    .textbox{
+        max-width: 45ch;
+        text-align: left;
+        margin-inline: 1rem;
+        padding-top: 2.5rem;
+
+        h2{
+            font-family: var(--ff-primary);
+             font-weight: 600;
+            font-size: 48px;
+            
+         
+         
+         }
+         p{
+            max-width: 32ch;
+            margin-block: 30px;
+                
+             
+             
+             }
+    
+
+
+             a{
+                background-color: var(--black);
+                color: var(--white-lilac);
+                padding: 10px 40px;
+                border-radius: .5rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                     
+                     }
+    }
+
+ 
+}
+     .article{
+        background-color: var(--white-lilac);
+        h1{
+            color: var(--black) ;  
+            font-family: var(--ff-primary) ;
+         font-size: var(--fs-xl);
+             font-weight: 600;
+             padding: 20px;
+             text-align: center;
+             min-width: 18ch;
+            font-style: normal;
+            &:after {
+                content:  url(./pngs/trybe4.png);
+            }
+    
+         }
+         .flexbx{
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            display: grid;
+            gap: 1rem;
+            grid-auto-flow: column;
+            grid-auto-columns: 36%;
+            overflow-x: auto;
+
+
+            .article_cardbx{
+                background: var(--white);
+                margin: 1em;
+                padding: 20px ;
+    
+            }
+        }
+        
+        
+     
+   
+     }
+     footer{
+        background: var(--black);
+        .socialBar{
+            padding-bottom: 50px;
+        }
+
+        .logo{
+            color: var(--black) ;  
+             font-weight: 600;
+             padding: 20px;
+             text-align: center;
+             align-content: center;
+             text-transform: uppercase;
+             display: flex;
+             flex-direction: column;
+             
+
+
+             img{
+                margin: 1rem;
+                align-self: center;
+             }
+        }
+
+        // min-height: 450px;
+        p{
+            color: var(--silver-chalice);
+        }
+        .linkbx{
+            margin: auto;
+
+                  
+        .yellbtn{
+            background-color: var(--fire-bush);
+            color: var(--black);
+            padding: 10px 40px;
+            border-radius: .5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-block: 10px;
+                 
+                 }
+
+        .blackbtn{
+         background-color: var(--black);
+         color: var(--silver-chalice);
+         padding: 10px 40px;
+         border-radius: .5rem;
+         border: solid 1px var(--silver-chalice);
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-block: 10px;
+                         
+         }
+        }
   
-    border-radius: 1.5rem;
-    width: fit-content;
-}
+     }
+
+     
