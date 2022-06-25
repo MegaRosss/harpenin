@@ -159,15 +159,15 @@ nav{
         border-radius: .4em;
         // make sure to check if the color of the back ground is correct
         // min-width: 15em;
-    }
- 
-    .event_bar > a{
-        background-color: var(--white);
-        padding: 8px 16px;
-        border-radius: .4em;
-        margin: 0;
-        
 
+        a{
+            background-color: var(--white);
+            padding: 8px 16px;
+            border-radius: .4em;
+            margin: 0;
+            
+    
+        }
     }
     .nu_nm_bold_black_16px { 
 
@@ -191,43 +191,39 @@ nav{
         text-align: center;
         padding: 36px 16px;
         
-
-    }
-
-
-    .textbx >h1{
-        // max-width: 38ch;
-        // margin: 3em auto;
-        // text-align: center;
-        padding: 10px;
-        line-height: 3.3125rem;
-
-    }
-
-    .textbx >p{
-        min-width: 25ch;
-        overflow-x: hidden;
-        padding:  0 25px 25px;
-        // padding-bottom: 25px;
+        h1{
+            // max-width: 38ch;
+            // margin: 3em auto;
+            // text-align: center;
+            padding: 10px;
+            line-height: 3.3125rem;
     
+        }
+        p{
+            min-width: 25ch;
+            overflow-x: hidden;
+            padding:  0 25px 25px;
+            // padding-bottom: 25px;
+        }
 
+        .btn{
+            // max-width: 38ch;
+            // margin: 3em auto;
+            // text-align: center;
+            // padding: 16px;
+            // line-height: 3.3125rem;
+            background-color: var(--fire-bush);
+            padding: 15px 30px;
+            border-radius: .4em;
+    
+        }
     }
     .textbx *{
         margin: 0 0 20px 0;
         // add the margins to be  correct for the figma file 
     }
 
-    .textbx > .btn{
-        // max-width: 38ch;
-        // margin: 3em auto;
-        // text-align: center;
-        // padding: 16px;
-        // line-height: 3.3125rem;
-        background-color: var(--fire-bush);
-        padding: 15px 30px;
-        border-radius: .4em;
-
-    }
+    
     .nu_nm_sm_black_40px { 
 
         color: var(--black) ;  
@@ -471,12 +467,13 @@ p{
 
 }
 .scroll{
-    display: grid;
-    gap: 1rem;
-    grid-auto-flow: column;
-    grid-auto-columns: 36%;
+    // display: grid;
+    // gap: 1rem;
+    // grid-auto-flow: column;
+    // grid-auto-columns: 36%;
+    margin-inline: 2.5rem;
     overflow-x: auto;
-
+    
 }
 .flexarea{
 

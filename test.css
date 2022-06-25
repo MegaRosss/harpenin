@@ -149,7 +149,7 @@ nav .menu {
   border-radius: .4em;
 }
 
-.event_bar > a {
+.event_bar a {
   background-color: var(--white);
   padding: 8px 16px;
   border-radius: .4em;
@@ -177,25 +177,25 @@ nav .menu {
   padding: 36px 16px;
 }
 
-.textbx > h1 {
+.textbx h1 {
   padding: 10px;
   line-height: 3.3125rem;
 }
 
-.textbx > p {
+.textbx p {
   min-width: 25ch;
   overflow-x: hidden;
   padding: 0 25px 25px;
 }
 
-.textbx * {
-  margin: 0 0 20px 0;
-}
-
-.textbx > .btn {
+.textbx .btn {
   background-color: var(--fire-bush);
   padding: 15px 30px;
   border-radius: .4em;
+}
+
+.textbx * {
+  margin: 0 0 20px 0;
 }
 
 .nu_nm_sm_black_40px {
@@ -346,11 +346,7 @@ nav .menu {
 }
 
 .scroll {
-  display: -ms-grid;
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: column;
-  grid-auto-columns: 36%;
+  margin-inline: 2.5rem;
   overflow-x: auto;
 }
 
