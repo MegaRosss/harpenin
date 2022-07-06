@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="./pngs/grey loader.png" type="image/x-icon">
+    
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
@@ -13,39 +17,67 @@
     <title>harpenin</title>
 </head>
 <body>
-<header>
-    <div class="content">
-        <nav class="flex">
-            <div class="logo"><img src="./harpenin images and other resources/img/svg's/small yellow logo.svg" alt=" harpenin's logo yellow"></div>
-            <div class="modal">
-                <a href="#" class="menu">MENU</a>
-            </div>
-        </nav>
-    
-        <div class="main">
-            <div class="event_bar">
-            <a href="#" class="eveAtt nu_nm_bold_black_16px" > For Event Attendees</a>
-            <a href="#" class="eveHost nu_nm_bold_black_16px"> For Event Host</a>
-            </div>
-            <div class="textbx ">
-            <h1 class="nu_nm_sm_black_40px">Just those events you love, around you!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh scelerisque justo vitae sapien, in. Eu sed dis nisi lectu.</p>
-            <a href="" class="btn nu_nm_bold_black_18px">JOIN THE WAITLIST</a>
+    <!-- <div id="loaderbg">
+        <div class="loader">
+            <img src="./pngs/grey loader.png" alt="">
+            <div class="progress-bar" style="--width: .0001" data-label="Loading..."></div>
+      
+        </div> -->
+    <!-- </div> -->
+    <dialog class="modal">
+        <div class="closebttn">
+        <a href="#" id="closebtn" >close</a>
+    </div>
+        <div class="textbxm">
+            <h3>For Events Hosts</h3>
+            <p>and events service providers.</p>
+        </div>
+        <div class="socialbarbx">
+            <div class="socialBar">
+                <div class="iconbx">
+                    <a href="#" class="blackbtn">tell us anything</a>
+                    <ul class="socialbr">
+                        <li><a href="#" alt="facebook_icon"><img class="iconw" src="./socialbarwht/facebook.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="twitter_icon"><img  class="iconw" src="./socialbarwht/twitter.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="instgram_icon"> <img  class="iconw" src="./socialbarwht/instagram.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="whatapp_icon"> <img  class="iconw" src="./socialbarwht/WhatsApp.svg" alt="social media"> </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </dialog>
+    
+    <header>
+        
+        <div class="content">
+            <nav class="flex">
+                <div class="logo"><a href="./index.html"><img src="./harpenin images and other resources/img/svg's/small yellow logo.svg" alt=" harpenin's logo yellow"></a></div>
+                <div>
+                    <a href="#" class="menu" id="menu">MENU</a>
+                    <!-- you changed the id in this section make sure to update it in all th e other html files -->
+                </div>
+            </nav>
+            
+            <div class="main">
+                <div class="event_bar" id="nav">
+                    <a href="./index.html"class="eveAtt nu_nm_bold_black_16px" id="navatt"> For Event Attendees</a>
+                    <a href="./host.html"class="eveHost nu_nm_bold_black_16px" id="navhost"> For Event Host</a>
+                </div>
+                <div class="textbx ">
+                    <h1 class="nu_nm_sm_black_40px">Just those events you love, around you!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh scelerisque justo vitae sapien, in. Eu sed dis nisi lectu.</p>
+                    <a href="" class="btn nu_nm_bold_black_18px">JOIN THE WAITLIST</a>
+                </div>
+        </div>
         <div class="socialBar">
-            <div class="icon">
+            <div class="iconbx">
                 <ul class="socialbr">
-                    <!-- <li><a href="#" alt="facebook_icon"><i class="fa-brands fa-facebook-f  fa-prop"></i></a></li>
-                    <li><a href="#" alt="twitter_icon"><i class="fa-brands fa-twitter fa-prop"></i></a></li>
-                    <li><a href="#" alt="instgram_icon"><i class="fa-brands fa-instagram fa-prop"></i> </a></li>
-                    <li><a href="#" alt="whatapp_icon"> <i class="fa-brands fa-whatsapp fa-prop"></i> </a></li> -->
     
     <!-- look for the svg logos of this ones and the ones at the bottom of the page -->
-                    <li><a href="#" alt="facebook_icon"><img src="./socialbarwht/Vector.png" alt="social media"></a></li>
-                    <li><a href="#" alt="twitter_icon"><img src="./socialbarwht/twitter.png" alt="social media"></a></li>
-                    <li><a href="#" alt="instgram_icon"> <img src="./socialbarwht/instagram.png" alt="social media"></a></li>
-                    <li><a href="#" alt="whatapp_icon"> <img src="./socialbarwht/WhatsApp.png" alt="social media" width="40px"> </a></li>
+                    <li><a href="#" alt="facebook_icon"><img class="icon" src="./svg/facebook.svg" alt="social media"></a></li>
+                    <li><a href="#" alt="twitter_icon"><img  class="icon" src="./svg/twitter.svg" alt="social media"></a></li>
+                    <li><a href="#" alt="instgram_icon"> <img  class="icon" src="./svg/instagram.svg" alt="social media"></a></li>
+                    <li><a href="#" alt="whatapp_icon"> <img  class="icon" src="./svg/ic_round-whatsapp.svg" alt="social media"> </a></li>
                 </ul>
             </div>
         </div>
@@ -79,7 +111,7 @@
         </div>     
       <div class="pack "> 
           <div class="purpleback">
-<span> color: red;font-size: 90px; position: absolute;top: 0; left: 0;margin: 0;</span>
+<span>this is helping the purple back </span>
           </div>
           <h3 class="nu_bold_sm_licorice_35px "> Engage and be part of events! </h3>
           <a href="#">Click to read more<a>
@@ -92,38 +124,45 @@
                   
             </section>
 <section class="events you love">
-    <div class="textbx evenluv">
+    <div class="textbxs evenluv">
     <h1 >Events you 💛</h1>
     <p>Pick events you’re interested in from the pool of events people have added below. It to helps us give you a better experience.  
     </p>
 </div>
-         <div class="scroll">
-            <div class="flexarea">
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child Lorem ipsum dolor sit.</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-                <a href="#" class="grid_child">im a child</a>
-            </div>
+<div class="scroll">
+<form action="">
+    <select name="events" class="customselect" multiple>
+        <option value="owanbe">owanbe</option>
+        <option value="owanbe">owanbe</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value="owanbe">owanbe</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value="owanbe">owanbe</option>
+        <option value="owanbe">owanbe</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value="birthday">birthday</option>
+        <option value="wedding">wedding</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value="excursion">excursion</option>
+        <option value="onlinegaming">onlinegaming</option>
+        <option value="competion">competion</option>
+        <option value="funeral">funeral</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae numquam aut">Lorem ipsum dolor sit am</option>
+        <option value="funeral">funeral</option>
 
-         </div>
+    </select>
+
+</form>
+</div>
 <div class="linkbx">
             <a href="#" class="purplelink">Can’t see what event you like?</a>
             <a href="#"class="greyarea">
@@ -151,54 +190,96 @@
 
 </section>
 <section class="article">
-    <h1>
-        Articles you might want to read</h1>
+    <h1>Articles you might want to read</h1>
     <div class="flexbx">
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
-        <div class="article_cardbx">
-            <div class="articlecard">
-                <h4>Why should I attend events?</h4>
-                <a href="#">By Ore from harpenin</a><img src="" alt=""></div>
-        </div>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+        <a href="./article.html">
+            <div class="article_cardbx" >
+                    <div class="articlecard">
+                        <h4>Why should I attend events?</h4>
+                        <a href="./article.html">By <span>Ore from harpenin</span></a>
+                        <img src="./articleimg.png" alt="">
+                    </div>
+            </div>
+        </a>
+       
+
     </div>
 </section>
 <footer>
 
-    <div class="logo">
+    <div class="glogo">
         <img src="./pngs/grey logo.png" alt="harpenin's logo grey">
         <p>COPYRIGHT 2022. ALL RIGHTS RESERVED.</p>
     
@@ -207,22 +288,17 @@
     <a href="#" class="yellbtn">JOIN THE WAIT LIST</a>
     <a href="#" class="blackbtn"> TELL US ANYTHING</a>
     </div>
-    <div class="socialBar">
-        <div class="icon">
-            <ul class="socialbr">
-                <!-- <li><a href="#" alt="facebook_icon"><i class="fa-brands fa-facebook-f  fa-prop"></i></a></li>
-                <li><a href="#" alt="twitter_icon"><i class="fa-brands fa-twitter fa-prop"></i></a></li>
-                <li><a href="#" alt="instgram_icon"><i class="fa-brands fa-instagram fa-prop"></i> </a></li>
-                <li><a href="#" alt="whatapp_icon"> <i class="fa-brands fa-whatsapp fa-prop"></i> </a></li> -->
-
-
-                <li><a href="#" alt="facebook_icon"><img src="./socialbarblk/facebook.png" alt="social media"></a></li>
-                <li><a href="#" alt="twitter_icon"><img src="./socialbarblk/twitter.png" alt="social media"></a></li>
-                <li><a href="#" alt="instgram_icon"> <img src="./socialbarblk/instagrmsc.png" alt="social media"></a></li>
-                <li><a href="#" alt="whatapp_icon"> <img src="./socialbarblk/WhatsApp.png" alt="social media" width="40px"> </a></li>
-            </ul>
-        </div>
-    </div>
+                <div class="socialBar">
+                    <div class="iconbx">
+                        <ul class="socialbr">
+                            <li><a href="#" alt="facebook_icon"><img class="iconw" src="./socialbarwht/facebook.svg" alt="social media"></a></li>
+                            <li><a href="#" alt="twitter_icon"><img  class="iconw" src="./socialbarwht/twitter.svg" alt="social media"></a></li>
+                            <li><a href="#" alt="instgram_icon"> <img  class="iconw" src="./socialbarwht/instagram.svg" alt="social media"></a></li>
+                            <li><a href="#" alt="whatapp_icon"> <img  class="iconw" src="./socialbarwht/WhatsApp.svg" alt="social media"> </a></li>
+                        </ul>
+                    </div>
+                </div>
 </footer>
+<script type="text/javascript" src="./functionality.js"></script>
 </body>
 </html>

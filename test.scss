@@ -37,7 +37,8 @@
      /* ff  */
 
    --ff-accent: "Montaga" ; 
-   --ff-primary: "Nunito Sans" ; 
+   --ff-primary: 'Nunito Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif; 
+//    font-family: ;
 
 }
 /* Box sizing */
@@ -46,6 +47,7 @@
 *::after {
     box-sizing: border-box;
     // overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Reset margins */
@@ -121,7 +123,70 @@ a::before
     justify-content: space-between;
   
 }
+.modal{
+    background: rgba(0, 0, 0, 0.959);
+    width: 100%;
+    height: 100vh;
+    
+    .closebttn{
+        display: inline;
+        float: right;
+        margin:2rem 0;
+        // background-color: #3514A6;
+        a{
+            color: var(--white-lilac);
+            text-transform: uppercase;
+    
+        }
+        &::before{
+            content: url(./svg/x.svg);
+            position: relative;
+            top: 10px;
+            left: -5px;
+        }
+    }
+.textbxm{
+    display: block;
+    margin: 7rem 0 18.5em  ;
+    border-bottom: 1px var(--fuscous-gray) solid;
+    padding-block: 1rem;
+        color: var(--white-lilac);
+        h3{
+            font-size: var(--fs-xl);
+            float: bottom;
+            &::after{
+                content: url(./svg/arrowsidepurp.svg);
+                color: inherit;
+                position: relative;
+                top: 7px;
+                left: 10px;
+            }
+        }
+        &:hover{
+            color: rgb(115, 12, 212);
+        }
+    }
 
+.iconbx{
+    display: flex;
+    flex-direction: column;
+}
+    .blackbtn{
+        background-color: var(--black);
+        color: var(--silver-chalice);
+        padding: 10px 40px;
+        border-radius: .5rem;
+        border: solid 1px var(--silver-chalice);
+       text-transform: uppercase;
+       font-weight: 600;
+       margin-inline: auto;
+    
+                        
+        }
+        &::backdrop{
+            background: black;
+        }
+}
 nav{
     padding: 12px 28px ;
     font-size: var(--fs-xs);
@@ -138,7 +203,7 @@ nav{
 
 
 
-        .logo > img{
+        .logo > a >img{
             width: 117.53px;
             display: block;
            
@@ -150,7 +215,9 @@ nav{
 
     .event_bar{
         background-color: var(--gray-nurse);
-        max-width: 23rem;
+        width: 25rem;
+    
+        // you removed the auto property from margin inline
         margin-inline: auto;
         display: flex;
         align-items: center;
@@ -161,13 +228,25 @@ nav{
         // min-width: 15em;
 
         a{
-            background-color: var(--white);
-            padding: 8px 16px;
+            
+            // use a check box too doo this
+            padding: 8px 24px;
             border-radius: .4em;
-            margin: 0;
+            color: var(--fuscous-gray) ;
+            // margin: 0;
+            &:focus , &:hover,&:active{
+                background-color: var(--white);
+                color: var(--black);
+            }
             
     
         }
+    }
+
+    .active{
+        background-color: var(--white);
+        color: var(--black);
+        
     }
     .nu_nm_bold_black_16px { 
 
@@ -233,18 +312,73 @@ nav{
         font-style: normal;
     }
 
+    // the style for the preloader
+
+    #loaderbg{
+ position: fixed;
+ z-index: 9999999;
+ width: 100%;
+ height: 100vh;
+ background-color: var(--white);
+//  overflow-y: ;
+
+
+.loader{
+    height: 55%;
+    display: grid;
+place-content: center;
+}
+    }
+
+
+    .progress-bar {
+        position: relative;
+        width: 150px;
+        height: .6em;
+        background-color: var(--gray-nurse);
+        border-radius: 1.5em;
+        margin-block: 10px;
+    }
+    
+    .progress-bar::before {
+        content: "";
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: calc(var(--width, 0) * 5%);
+        max-width: 100%;
+        min-width: 2rem;
+        background-color: var(--fire-bush);
+        border-radius: 1em;
+        padding: .3em;
+
+    }
+    
+    
 
     
-    // .icon{
-    //     color: white;
-    //     fill: var(--white-lilac);
-    //  this adds color to the icon social bar but its not working properly}
+    .icon{
+        color: wheat;
+        fill: var(--white-lilac);
+        // background-color: rgba(50, 205, 50, 0.275);
+        padding-inline: 17.5px;
+    //  this adds color to the icon social bar but its not working properly
+    }
+    .iconw{
+        color: wheat;
+        fill: var(--white-lilac);
+        // background-color: rgba(50, 205, 50, 0.275);
+        // width: 30px;
+        padding-inline: 17.5px;
 
-        .fa-prop{
-            font-size: 30px;
-            color: var(--black);
-        //    look for better icons that look like the ones from the figma doc
-        }
+    //  this adds color to the icon social bar but its not working properly
+    }
+
+    //     .fa-prop{
+    //         font-size: 30px;
+    //         color: var(--black);
+    //     //    look for better icons that look like the ones from the figma doc
+    //     }
 
     // .socialBar{
     //     min-width: 228px;
@@ -252,12 +386,21 @@ nav{
     //     // remove the html element that has this class
     // }
     .socialbr{
-        max-width: 16.02rem;
+        max-width: max-content;
         margin-inline: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 20px ;
+
+.iconbx{
+
+
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+    }
     }
 
     .stimgbx{
@@ -276,8 +419,8 @@ nav{
         //     height: 100%;
         //     // background: rgba(2,0,36, 0.1);
         //     // background: rgb(2,0,36);
-        //     // background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 81%); 
-        //     // opacity: 0.7;
+            // background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 81%); 
+            // opacity: 0.7;
              
         // }
     }
@@ -384,7 +527,11 @@ nav{
         border: var(--gray-nurse) solid 1px;
         text-align: center;
         width: auto;
-        
+        a{
+            color: var(--gray-nurse);
+            font-size: var(--fs-s);
+            margin-block: 30px;
+        }
 
     }
     // .pack ::after{
@@ -446,6 +593,23 @@ nav{
     //     font-weight: 600;
     //     font-style: normal;
     // }
+.textbxs{
+    h1{
+        padding: 10px;
+        line-height: 3.3125rem;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+    p{
+        min-width: 25ch;
+        overflow-x: hidden;
+        padding:  0 25px 25px;
+        text-align: center;
+    }
+}
+
+
 .evenluv {
     h1{
         color: var(--black) ;  
@@ -475,32 +639,40 @@ p{
     overflow-x: auto;
     
 }
-.flexarea{
-
+.select{
     display: flex;
     flex-wrap: wrap;
+    
 
     // margin-inline: 1rem;
-    gap: 1rem;
-    inline-size: 55rem;
-    overflow-x: scroll;
-    .grid_child{
+    // and to remove that extra padding try putting it in another container and then apply padding or gap
+    gap: .5rem;
+   min-width:70rem;
+   max-width: 90rem;
+    overflow-x: auto;
+    overflow-y: none;
+    .selectitem{
         border-radius: 1rem;
         border: solid 2px var( --silver-chalice);
         // background: #3514A6;
         min-width: fit-content;
         padding: 5px 20px;
-
-        &:hover{
+        // check out the video on the multi select menu
+        &:is(:hover, :focus){
             background-color: var(--fire-bush);
             border: solid 2px white;
         }
-        
-    }
-
-    
+}
+}
 
 
+.selected{
+    background-color: var(--fire-bush);
+        border: solid 2px white;
+        &:is(:hover, :focus){
+                background-color: var(--fire-bush);
+                border: solid 2px white;
+}
 }
 
 .linkbx{
@@ -566,6 +738,7 @@ padding: 2rem auto;
             font-family: var(--ff-primary);
              font-weight: 600;
             font-size: 48px;
+
             
          
          
@@ -580,66 +753,175 @@ padding: 2rem auto;
     
 
 
-             a{
-                background-color: var(--black);
-                color: var(--white-lilac);
-                padding: 10px 40px;
-                border-radius: .5rem;
-                text-transform: uppercase;
-                font-weight: 600;
-                     
-                     }
+            
     }
 
  
 }
-     .article{
-        background-color: var(--white-lilac);
-        h1{
-            color: var(--black) ;  
-            font-family: var(--ff-primary) ;
-         font-size: var(--fs-xl);
+
+.trybe >.textbox> a{
+    background-color: var(--black);
+    color: var(--white-lilac);
+    padding: 10px 40px;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+         
+         }
+
+
+.hosttrybe{
+    background-color: var(--pixie-powder);
+    background-image: 
+    url(./pngs/hosttrybe.png),
+    url(./pngs/trybehost.png);
+    // try using a clamp function here 
+    background-size: 12em,4em;
+    background-repeat: no-repeat,no-repeat;
+    background-position:bottom right, bottom 13rem left 1rem;
+    min-height: 586px;
+
+    .textbox{
+        max-width: 35ch;
+        text-align: left;
+        margin-inline: 1rem;
+        padding-top: 4.3rem;
+
+
+        h3{
+            font-family: var(--ff-primary);
              font-weight: 600;
-             padding: 20px;
-             text-align: center;
-             min-width: 18ch;
-            font-style: normal;
+            font-size: var(--fs-xxl);
+    color: var(--white-lilac);
+    // line-height: 3.3125rem;
+
+
+            
+         
+         
+         }
+         p{
+            max-width: 32ch;
+            margin-bottom: 30px;
+    color: var(--white-lilac);
+    padding-bottom: .2rem;
+
+                
+             }
+    }
+
+    a{
+        color: var(--black);
+        font-weight: 600;
+        background-color: rgba(255, 255, 255, 0.64);
+        // background: #3514A6;
+        border: rgba(255, 255, 255, .5) 1px solid;
+        border-radius: .5rem;
+        padding: 10px 40px;
+        backdrop-filter: blur(50px);
+        // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    
+}
+
+
+
+
+.article{
+    background-color: var(--white-lilac);
+    h1{
+        color: var(--black) ;  
+        font-family: var(--ff-primary) ;
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        padding: 20px;
+        text-align: center;
+        //  min-width: 18ch;
+        font-style: normal;
             &:after {
                 content:  url(./pngs/trybe4.png);
             }
-    
-         }
-         .flexbx{
+            
+        }
+        .flexbx{
             // display: flex;
             // justify-content: center;
             // align-items: center;
-            display: grid;
-            gap: 1rem;
-            grid-auto-flow: column;
-            grid-auto-columns: 36%;
+            // display: inline-grid;
+            // gap: 3rem;
+            // grid-auto-flow: column;
+            // grid-auto-columns: 16.3%;
+            display: flex;
             overflow-x: auto;
-
-
+            gap: 2rem;
+            margin-inline: 1rem;
+            padding-block: 2rem;
+            
+            
+            
             .article_cardbx{
                 background: var(--white);
-                margin: 1em;
-                padding: 20px ;
+    
+                // padding: 1rem ;
+                width: max-content;
+                
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.177);
+                border-radius: 1rem;
+                
+                h4{
+                    font-weight: 700;
+                    width: 12ch;
+                    // padding: 1rem 1.5rem .2em;
+                    font-size: var(--fs-m);
+                    margin-right: 4rem;
+
+                }
+                a{
+                    display: block;
+                    padding: 0 1.5em 1em;
+                    font-size: 15px;
+                    font-family: var(--ff-accent);
+                    font-weight: 100;
+                    span{
+                        color: var(--pixie-powder);
+                    }
+
+                }
+                
+                img{
+                    display: block;
+                    width: 100%;
+                    border-bottom-left-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+
+
+                }
+
     
             }
         }
+
         
         
      
    
      }
+
+
+    //  .logobx{
+
+    //  }
      footer{
         background: var(--black);
         .socialBar{
             padding-bottom: 50px;
         }
 
-        .logo{
+        .glogo{
             color: var(--black) ;  
+          
              font-weight: 600;
              padding: 20px;
              text-align: center;
@@ -647,12 +929,14 @@ padding: 2rem auto;
              text-transform: uppercase;
              display: flex;
              flex-direction: column;
+
              
 
 
              img{
                 margin: 1rem;
                 align-self: center;
+                max-width: 12em;
              }
         }
 
@@ -663,7 +947,7 @@ padding: 2rem auto;
         .linkbx{
             margin: auto;
 
-                  
+        }   
         .yellbtn{
             background-color: var(--fire-bush);
             color: var(--black);
@@ -686,8 +970,79 @@ padding: 2rem auto;
         margin-block: 10px;
                          
          }
-        }
+        
   
      }
 
+     .wrods{
+        display: flex;
+        flex-direction: column;
+        padding: 5em;
+        overflow-x: auto;
+        min-height: 10em;
+        p{        background-color: #E9D2FD;
+           
+            font-family: var(--ff-accent);
+            font-size: var(--fs-xl);
+            font-weight: 400;
+            width: max-content;
+            
+        }
+        span{
+            font-weight: 600;
+            font-size: var(--fs-m);
+            padding: .5em;
+        }
+        img{
+
+        width: 5rem;
+        align-self: center;
+        // padding-bottom: 8rem;
+    }
+        
+
+     }
      
+     .articlebody{
+        padding: 2rem;
+
+        .textbox{
+            // max-width: 45ch;
+            text-align: left;
+            // margin-inline: 1rem;
+            // padding-top: 2.5rem;
+    
+            h2{
+                 font-weight: 600;
+                font-size: 48px;
+                line-height: 53px;
+                
+             
+             
+             }
+             img{
+                min-width: 350px;
+             }
+             p{
+                max-width: 40ch;
+                margin-block: 30px;
+                    
+                 
+                 
+                 }
+        
+                }
+            }
+
+            .homeicon{
+                padding-left: 2rem;
+                color: var(--fuscous-gray);
+                &::before{
+                    content: url(./svg/home.svg);
+                    // margin-inline: 1rem;
+                    position: relative;
+                    top: 6px;
+                    padding-right: .5rem;
+                }
+             
+            }

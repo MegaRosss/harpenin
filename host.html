@@ -4,80 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./pngs/grey loader.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="test.css">
+    <script type="text/javascript"  defer src="./functionality.js"></script>
     <title>harpenin</title>
 </head>
 <body>
+    <dialog class="modal">
+        <div class="closebttn">
+        <a href="#" id="closebtn" >close</a>
+    </div>
+        <div class="textbxm">
+            <h3>For Events Hosts</h3>
+            <p>and events service providers.</p>
+        </div>
+        <div class="socialbarbx">
+            <div class="socialBar">
+                <div class="iconbx">
+                    <a href="#" class="blackbtn">tell us anything</a>
+                    <ul class="socialbr">
+                        <li><a href="#" alt="facebook_icon"><img class="iconw" src="./socialbarwht/facebook.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="twitter_icon"><img  class="iconw" src="./socialbarwht/twitter.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="instgram_icon"> <img  class="iconw" src="./socialbarwht/instagram.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="whatapp_icon"> <img  class="iconw" src="./socialbarwht/WhatsApp.svg" alt="social media"> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </dialog>
 <header>
     <div class="content">
-        <nav>
-            <div class="logo"></div>
-            <div class="modal">
-                <a href="#" class="menu"></a>
+        <nav class="flex">
+            <div class="logo"><a href="./index.html"><img src="./harpenin images and other resources/img/svg's/small yellow logo.svg" alt=" harpenin's logo yellow"></a></div>
+            <div>
+                <a href="#" class="menu" id="menu">MENU</a>
             </div>
         </nav>
     
-        <div class="textbx">
-            <div class="event_bar">
-            <div class="eveAtt"><a href="#"> For Event Attendees</a></div>
-            <div class="eveHost"><a href="#"> For Event Host</a></div>
-            </div>
-            <h1>Just those events you love, around you!</h1>
+        <div class="main">
+            <div class="event_bar" id="nav">
+                <a href="./index.html"class="eveAtt nu_nm_bold_black_16px" id="navatt"> For Event Attendees</a>
+                <a href="./host.html"class="eveHost nu_nm_bold_black_16px" id="navhost"> For Event Host</a>
+                </div>
+            <div class="textbx ">
+            <h1 class="nu_nm_sm_black_40px">Just those events you love, around you!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh scelerisque justo vitae sapien, in. Eu sed dis nisi lectu.</p>
-            <a href="" class="btn"></a>
+            <a href="" class="btn nu_nm_bold_black_18px">JOIN THE WAITLIST</a>
+            </div>
         </div>
         <div class="socialBar">
-            <div class="icon">
-                <ul>
-                    <li><a href="#" alt="facebook_icon"  ></a></li>
-                    <li><a href="#" alt="twitter_icon" ></a></li>
-                    <li><a href="#" alt="instgram_icon" ></a></li>
-                    <li><a href="#" alt="whatapp_icon" ></a></li>
+            <div class="iconbx">
+                <ul class="socialbr">
+    <!-- look for the svg logos of this ones and the ones at the bottom of the page -->
+                    <li><a href="#" alt="facebook_icon"><img class="icon" src="./svg/facebook.svg" alt="social media"></a></li>
+                    <li><a href="#" alt="twitter_icon"><img  class="icon" src="./svg/twitter.svg" alt="social media"></a></li>
+                    <li><a href="#" alt="instgram_icon"> <img  class="icon" src="./svg/instagram.svg" alt="social media"></a></li>
+                    <li><a href="#" alt="whatapp_icon"> <img  class="icon" src="./svg/ic_round-whatsapp.svg" alt="social media"> </a></li>
                 </ul>
             </div>
         </div>
-        <div class="imgbx">
-            <img src="#" alt="imgage of a group of black queens" >
+        <div class=" stimgbx">
+            <!-- <img src="#" alt="imgage of a group of black queens" > -->
+            <div class="overlay"></div>
         </div>
     </div>
 </header>
 <section>
     <div class="boderarea">
-        <h3> Never miss events you love!
+      <div class="pack"> 
+           <h3 class="nu_bold_sm_licorice_35px"> Never miss events you love! </h3>
             <a href="#">Click to read more<a>
-        <h3>
-        <h3>Engage and be part of events!
+        </div>     
+      <div class="pack "> 
+          <div class="purpleback">
+<span>this is helping the purple back </span>
+          </div>
+          <h3 class="nu_bold_sm_licorice_35px "> Engage and be part of events! </h3>
+          <a href="#">Click to read more<a>
+        </div>     
+      <div class="pack"> 
+           <h3 class="nu_bold_sm_licorice_35px"> Post events to awaiting audience! </h3>
             <a href="#">Click to read more<a>
-        </h3>
-        <h3>Post events to awaiting audience!
-            <a href="#">Click to read more</a>
-        </h3>
-    </div>
-    <div class="container">
-    <div class="hostarea flex">
-        <div class="textbx">
-            <h4>FOR EVENT SERVICE PROVIDERS</h4>
-            <h2>Find people that need your services online!</h2>
-            <p>Are you a Caterer, Photographer, DJ? Or you own a Rental service or an Event hall / venue? Then this is your time to be known for what you do and get more jobs done! </p>
-            <a href="#">COMING SOON</a>
+        </div>     
+    </div>     
+                  
+            </section>
+<div class="linkbx">
+             <a href="#" class="purplelink"></a> 
+           
+</div>
+
+
+<section class="hosttrybe">
+    <!-- the background picture in this sectiot import it exactly like the first one then use th eexact styling for it -->
+        <div class="textbox">
+            <h3>
+                Find people that need your services online!
+            </h3>
+            <p>
+                Are you a Caterer, Photographer, DJ? Or you own a Rental service or an Event hall / venue? Then this is your time to be known for what you do and get more jobs done! 
+            </p>
+            <a href="#" class="glass">COMING SOON</a>
         </div>
-        <div class="imgbx"> 
-            <img src="#" alt="darkskin guy smileing">
-        </div>
-    </div>
-    <h3>“The 21st centuty way of hosting events”<span> - Harpenin team</span></h3>
-    </div>
 </section>
+<!-- there is a section missing here  -->
+<div class="wrods">
+    <!-- add a div around the img tag then use marging or padding to add space between or try flex box -->
+    <img src="./pngs/wordimg.png" alt="">
+    <p>“The 21st centuty way of hosting events”</p>
+    <span>-Harpenin team</span>
+</div>
+
+</section>
+
 <footer>
-    <div class="logo"><img src="#" alt="harpenin's logo grey"></div>
-    <p>COPYRIGHT 2022. ALL RIGHTS RESERVED.</p>
-    <a href="#">JOIN THE WAIT LIST</a>
-    <a href="#"> TELL US ANYTHING</a>
-    <div class="socialbar">
-        <a href="#" alt="facebook_icon"></a>
-        <a href="#" alt="twitter_icon"></a>
-        <a href="#"alt="whatapp_icon" ></a>
-       
+
+    <div class="glogo">
+        <img src="./pngs/grey logo.png" alt="harpenin's logo grey">
+        <p>COPYRIGHT 2022. ALL RIGHTS RESERVED.</p>
+    
+    </div>
+    <div class="linkbx">
+    <a href="#" class="yellbtn">JOIN THE WAIT LIST</a>
+    <a href="#" class="blackbtn"> TELL US ANYTHING</a>
+    </div>
+    <div class="socialBar">
+        <div class="iconbx">
+            <ul class="socialbr">
+                <li><a href="#" alt="facebook_icon"><img class="iconw" src="./socialbarwht/facebook.svg" alt="social media"></a></li>
+                <li><a href="#" alt="twitter_icon"><img  class="iconw" src="./socialbarwht/twitter.svg" alt="social media"></a></li>
+                <li><a href="#" alt="instgram_icon"> <img  class="iconw" src="./socialbarwht/instagram.svg" alt="social media"></a></li>
+                <li><a href="#" alt="whatapp_icon"> <img  class="iconw" src="./socialbarwht/WhatsApp.svg" alt="social media"> </a></li>
+            </ul>
+        </div>
     </div>
 </footer>
 </body>
