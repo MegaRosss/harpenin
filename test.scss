@@ -215,7 +215,8 @@ nav{
 
     .event_bar{
         background-color: var(--gray-nurse);
-        width: 25rem;
+        max-width: 25rem;
+        min-width: 23em;
     
         // you removed the auto property from margin inline
         margin-inline: auto;

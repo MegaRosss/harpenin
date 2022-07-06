@@ -213,7 +213,8 @@ nav .menu {
 
 .event_bar {
   background-color: var(--gray-nurse);
-  width: 25rem;
+  max-width: 25rem;
+  min-width: 23em;
   margin-inline: auto;
   display: -webkit-box;
   display: -ms-flexbox;
