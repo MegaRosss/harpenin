@@ -195,6 +195,119 @@ li::before {
   background: black;
 }
 
+@media (min-width: 768px) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100vh;
+    background: url(./pngs/Group3.png);
+    background-size: 40em;
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+  .main .event_bar {
+    position: relative;
+    right: 130px;
+    margin-block: 5rem 0;
+  }
+  .main .textbx {
+    text-align: left;
+    padding: 16px 36px;
+  }
+  .main .textbx h1 {
+    width: 24ch;
+    padding: 10px;
+    line-height: 3.3125rem;
+  }
+  .main .textbx p {
+    width: 52ch;
+  }
+  .main .textbx .btn {
+    margin-inline: 10px;
+    border-radius: .4em;
+  }
+  .socialbrb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-inline: auto;
+    padding: 10px;
+  }
+  .socialbrb .iconbx ul {
+    margin: 0;
+    padding: 0;
+  }
+  .socialbr {
+    position: relative;
+    right: 180px;
+    top: 80px;
+    background-color: #ffffff;
+  }
+  .twobx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .twobx .textbxtwo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .boderarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .overlay {
+    display: none;
+  }
+  .stimgbx {
+    background-image: url(./pngs/blackqueens2.png);
+    background-size: cover;
+    background-position: left;
+    width: 45%;
+  }
+  .trybebx {
+    margin-block: 10em;
+    background: url(./pngs/trybe2.png);
+    background-repeat: no-repeat;
+    background-position: bottom  right 100px;
+  }
+  .trybe {
+    width: 50em;
+    aspect-ratio: 2/1;
+    margin-inline: auto;
+    border-radius: 1rem;
+    padding-inline: 1em;
+  }
+  .hosttrybe {
+    width: 50em;
+    aspect-ratio: 2/1;
+    margin-inline: auto;
+    border-radius: 1rem;
+    padding-inline: 1em;
+  }
+}
+
 nav {
   padding: 12px 28px;
   font-size: var(--fs-xs);
@@ -274,7 +387,7 @@ nav .menu {
 .textbx p {
   min-width: 25ch;
   overflow-x: hidden;
-  padding: 0 25px 25px;
+  padding: 0 10px 25px;
 }
 
 .textbx .btn {
@@ -362,7 +475,7 @@ nav .menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 5px;
 }
 
 .socialbr .iconbx ul {
@@ -385,7 +498,7 @@ nav .menu {
   position: absolute;
 }
 
-.textbxtwo {
+.twobx {
   background-image: url(./pngs/logoblur.png), url(./pngs/logoblur.png);
   background-repeat: no-repeat;
   background-position: top -40px right -30px, top right 80px;
@@ -591,20 +704,48 @@ nav .menu {
   padding: 2rem auto;
 }
 
+.socialbrb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-inline: auto;
+  padding: 10px;
+}
+
+.socialbrb .iconbx ul {
+  margin: 0;
+  padding: 0;
+}
+
 .trybe {
   background-color: var(--fire-bush);
   background-image: url(./pngs/trybe.png), url(./pngs/trybe2.png);
   background-size: contain, 5em;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom right, top 28em left 2em;
-  min-height: 586px;
+  height: 100%;
 }
 
 .trybe .textbox {
   max-width: 45ch;
   text-align: left;
   margin-inline: 1rem;
-  padding-top: 2.5rem;
+  padding-block: 2.5rem 15rem;
+}
+
+@media (min-width: 768px) {
+  .trybe .textbox {
+    padding-block: 2.5rem 1rem;
+  }
 }
 
 .trybe .textbox h2 {
@@ -630,17 +771,23 @@ nav .menu {
 .hosttrybe {
   background-color: var(--pixie-powder);
   background-image: url(./pngs/hosttrybe.png), url(./pngs/trybehost.png);
-  background-size: 12em,4em;
+  background-size: 16em, 4em;
   background-repeat: no-repeat,no-repeat;
   background-position: bottom right, bottom 13rem left 1rem;
-  min-height: 586px;
+  height: 100%;
 }
 
 .hosttrybe .textbox {
-  max-width: 35ch;
+  max-width: 45ch;
   text-align: left;
   margin-inline: 1rem;
-  padding-top: 4.3rem;
+  padding-block: 2.5rem 15rem;
+}
+
+@media (min-width: 768px) {
+  .hosttrybe .textbox {
+    padding-block: 2.5rem 1rem;
+  }
 }
 
 .hosttrybe .textbox h3 {
@@ -691,6 +838,7 @@ nav .menu {
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
   gap: 2rem;
   margin-inline: 1rem;
   padding-block: 2rem;
@@ -730,6 +878,15 @@ nav .menu {
   width: 100%;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+.snap_inline {
+  -ms-scroll-snap-type: inline mandatory;
+      scroll-snap-type: inline mandatory;
+}
+
+.snap_inline > * {
+  scroll-snap-align: start;
 }
 
 footer {

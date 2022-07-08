@@ -187,6 +187,147 @@ a::before
             background: black;
         }
 }
+      
+@media ( min-width : 768px) {
+.content{
+    display: flex;
+    justify-content: space-between;
+    // display: grid;
+    // grid-auto-flow: column;
+    // grid-auto-columns: 50%;
+    height: 100vh;
+    background: url(./pngs/Group3.png);
+    background-size: 40em;
+    background-repeat: repeat-x;
+background-position: bottom;
+    
+
+}
+.main{
+    .event_bar{
+        // display: inline-block;
+        position: relative;
+        right: 130px;
+        margin-block: 5rem 0;
+        // padding-block: 10px;
+        // float: left;
+
+    }
+    .textbx{
+        // width: 85ch;
+        // margin: 3em auto;
+        text-align: left;
+        padding: 16px 36px;
+
+
+        h1{
+            width: 24ch;
+            // margin: 3em auto;
+            // text-align: center;
+            padding: 10px;
+            line-height: 3.3125rem;
+            
+        }
+        p{
+            width: 52ch;
+            // overflow-x: hidden;
+            // background-color: #3514A6;
+            // padding:  0 25px 25px;
+            // padding-bottom: 25px;
+        }
+
+        .btn{
+            // max-width: 38ch;
+            // margin: 3em auto;
+            // text-align: center;
+            // padding: 16px;
+            // line-height: 3.3125rem;
+            // background-color: var(--fire-bush);
+            margin-inline: 10px ;
+            border-radius: .4em;
+    
+        }
+
+
+        
+    }
+}
+.socialbrb{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: max-content;
+    margin-inline: auto;
+    padding: 10px;
+    .iconbx{
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+}
+.socialbr{
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // // padding: 10px ;
+    // background-color: #e10c0c;
+    position: relative;
+    right: 180px;
+    top: 80px;
+    background-color: #ffffff;
+
+}    
+.twobx{
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    justify-content: center;
+
+    .textbxtwo{
+        order: 2;
+    }
+}
+.boderarea{
+    display: flex;
+}
+.overlay{display: none;}
+.stimgbx{
+    background-image: 
+    url(./pngs/blackqueens2.png);
+
+    background-size: cover;
+    background-position: left;
+    width: 45%;
+    // outline: 2px solid black;
+
+    
+    }.trybebx{
+        margin-block:  10em ;
+        // height: fit-content;
+        background: url(./pngs/trybe2.png);
+        background-repeat: no-repeat;
+        background-position: bottom  right 100px;
+    }
+    .trybe{
+        // display: block;
+        width: 50em;
+        aspect-ratio: 2/1;
+        // height: 10em;
+        margin-inline: auto;
+        border-radius: 1rem;
+        padding-inline: 1em;
+    }
+    .hosttrybe{
+        width: 50em;
+        aspect-ratio: 2/1;
+        // height: 10em;
+        margin-inline: auto;
+        border-radius: 1rem;
+        padding-inline: 1em;
+    }
+}
 nav{
     padding: 12px 28px ;
     font-size: var(--fs-xs);
@@ -270,6 +411,10 @@ nav{
         // margin: 3em auto;
         text-align: center;
         padding: 36px 16px;
+        // @media (width:768px) {
+        //     text-align: left;
+            
+        // }
         
         h1{
             // max-width: 38ch;
@@ -282,7 +427,13 @@ nav{
         p{
             min-width: 25ch;
             overflow-x: hidden;
-            padding:  0 25px 25px;
+            padding:  0 10px 25px;
+           
+            // @media (width:768px) {
+            // padding:  0 10px 5px;
+
+                
+            // }
             // padding-bottom: 25px;
         }
 
@@ -392,7 +543,7 @@ place-content: center;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px ;
+        padding: 5px ;
 
 .iconbx{
 
@@ -423,8 +574,10 @@ place-content: center;
             // background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 81%); 
             // opacity: 0.7;
              
-        // }
-    }
+            // }
+        }
+        
+  
     .overlay{
         // background: linear-gradient(to bottom, rgba(255, 255, 255, 0.386) 5%, rgba(1,1,1,0) 95%);
         background: linear-gradient(0deg, rgba(2,0,36,0) 60%, rgba(255,255,255,1) 100%);  
@@ -432,7 +585,7 @@ place-content: center;
         height: 100%;
         position: absolute;
     }
-    .textbxtwo{
+    .twobx{
         background-image:
         url( ./pngs/logoblur.png),
         url( ./pngs/logoblur.png)
@@ -443,11 +596,23 @@ place-content: center;
         background-size: auto, 40px;
         padding: 30px 0;
 
-        // background-image: url(./pngs/logoblur.png);
-        // background-repeat: no-repeat;
-        // background-position: top 40px right 20px;
-
     }
+    // .textbxtwo{
+    //     // background-image:
+    //     // url( ./pngs/logoblur.png),
+    //     // url( ./pngs/logoblur.png)
+
+    //     // ;
+    //     // background-repeat: no-repeat;
+    //     // background-position: top -40px right -30px, top right 80px ;
+    //     // background-size: auto, 40px;
+    //     // padding: 30px 0;
+
+    //     // background-image: url(./pngs/logoblur.png);
+    //     // background-repeat: no-repeat;
+    //     // background-position: top 40px right 20px;
+
+    // }
     .textbxtwo > h2{
         padding: 10px;
         display: flex;
@@ -709,7 +874,21 @@ text-align: center;
 padding: 2rem auto;
 
 }
+.socialbrb{
+    display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: max-content;
+margin-inline: auto;
+padding: 10px;
+.iconbx{
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+}
 
+}
 
 
 
@@ -727,13 +906,18 @@ padding: 2rem auto;
      top 28em left 2em
 
     ;
-    min-height: 586px;
+    height: 100%;
 
     .textbox{
         max-width: 45ch;
         text-align: left;
         margin-inline: 1rem;
-        padding-top: 2.5rem;
+        padding-block: 2.5rem 15rem;
+@media ( min-width : 768px) {
+    padding-block: 2.5rem 1rem;
+    
+            
+        }
 
         h2{
             font-family: var(--ff-primary);
@@ -777,16 +961,22 @@ padding: 2rem auto;
     url(./pngs/hosttrybe.png),
     url(./pngs/trybehost.png);
     // try using a clamp function here 
-    background-size: 12em,4em;
+    background-size: min(16em),4em;
     background-repeat: no-repeat,no-repeat;
     background-position:bottom right, bottom 13rem left 1rem;
-    min-height: 586px;
+    height: 100%;
 
     .textbox{
-        max-width: 35ch;
+        max-width: 45ch;
         text-align: left;
         margin-inline: 1rem;
-        padding-top: 4.3rem;
+         padding-block: 2.5rem 15rem;
+
+        @media ( min-width : 768px) {
+            padding-block: 2.5rem 1rem;
+            
+                    
+                }
 
 
         h3{
@@ -856,6 +1046,7 @@ padding: 2rem auto;
             // grid-auto-columns: 16.3%;
             display: flex;
             overflow-x: auto;
+            overscroll-behavior-x: contain;
             gap: 2rem;
             margin-inline: 1rem;
             padding-block: 2rem;
@@ -909,7 +1100,12 @@ padding: 2rem auto;
      
    
      }
-
+     .snap_inline{
+        scroll-snap-type: inline mandatory;
+     }
+     .snap_inline > *{
+        scroll-snap-align: start;
+     }
 
     //  .logobx{
 
