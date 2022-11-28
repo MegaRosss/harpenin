@@ -4,12 +4,12 @@
   --black: rgba(1, 1, 1, 1);
   --licorice: rgba(17, 17, 17, 1);
   --pixie-powder: rgba(53, 20, 166,1);
-  --fuscous-gray: rgba(81, 81, 81,  1);
+  --fuscous-gray: rgba(81, 81, 81, 1);
   --chicago: rgba(88, 88, 88, 1);
   --au-chico: rgba(157, 93, 93, 1);
   --silver-chalice: rgba(175, 175, 175, 1);
   --buddha-gold: rgba(194, 146, 6, 1);
-  --mercury:  rgba(228, 228, 228, 1);
+  --mercury: rgba(228, 228, 228, 1);
   --gray-nurse: rgba(233, 233, 233, 1);
   --fire-bush: rgba(238, 157, 36, 1);
   --white-lilac:rgba(246, 248, 252, 1);
@@ -44,10 +44,10 @@
     :root {
         /* font-sizes */
 /* --fs-800: 6.25rem;
-        --fs-700: 3.5rem;
-        --fs-600: 2rem;
-        --fs-500: 1.75rem;
-        --fs-400: 1.125rem; */
+--fs-700: 3.5rem;
+--fs-600: 2rem;
+--fs-500: 1.75rem;
+--fs-400: 1.125rem; */
 /* } */
 /*try writing your media quries in a different css file and make sure it only downloads according to the device screen size or wheter its in  landscape mode or its in potrait mode*/
 /* Classes  */
@@ -175,8 +175,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Reset margins */
@@ -221,32 +220,26 @@ select {
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     -webkit-animation-duration: 0.01ms !important;
             animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
             animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */
 /* general */
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: var(--gap, 1rem);
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
   gap: var(--gap, 1rem);
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

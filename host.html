@@ -15,95 +15,207 @@
     <title>harpenin</title>
 </head>
 <body>
-    <dialog class="modal">
-        <div class="closebttn">
-        <a href="#" id="closebtn" >close</a>
-    </div>
-        <div class="textbxm">
-            <h3>For Events Hosts</h3>
-            <p>and events service providers.</p>
+    <!-- slide show -->
+    <dialog class="slideshow-container" id="sShow">
+        <div class="bxflex">
+            <a href="#" class="greybtn">share image</a>
+            <div class="closebttn" id="closebtn5" >
+                <a href="#">close</a>
+            </div>
+    
         </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="ssflex">
+    <div class="imgssbx">
+                <div class="mySlides fade">
+                <img src="./slide show/Hosts - a1.png" >
+                <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./slide show/Hosts - a2.png" >
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./slide show/Hosts - b1.png" >
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./slide show/Hosts - b2.png" >
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./slide show/Hosts - b3.png" >
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./slide show/Hosts - c1.png" >
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <span class="gridarea">   
+                        <div class="div1"><a href="#"><img src="./socialbarwht/facebook.svg"></a></div>
+                        <div class="div2"><a href="#"><img src="./socialbarwht/twitter.svg"></a></div>
+                        <div class="div3"><a href="#"><img src="./socialbarwht/instagram.svg"></a></div>
+                    </span>
+                    <div class="text">Want to know more, follow our socials</div>
+                </div>
+    </div>
+             <!-- The dots/circles  -->
+        </div>
+        <div class="dotbx" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+             <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#171;</a>
+            <a class="next" onclick="plusSlides(1)">&#187;</a>
+      </dialog>
+        
+  
+    <dialog class="modal">
+        <div class="closebttn" id="closebtn" >
+        <a href="#">close</a>
+    </div>
+    
+        <div class="textbxm">
+            <a href="./index.html">
+            <div class="boder">
+            <h3>For Event Attendees <span>&#129125;</span></h3>
+            <p>and adventures looking for the next adventure.</p>
+        </div>
+            </a>
+            <a href="./article.html">
+        <div class="boder">
+            <h3>Articles <span>&#129125;</span></h3>
+            <p>to help you get the best out of events</p>
+        </div>
+        </a>    
+        </div>
+   
         <div class="socialbarbx">
             <div class="socialBar">
                 <div class="iconbx">
-                    <a href="#" class="blackbtn">tell us anything</a>
+                    <a href="#" class="blackbtn"id="menu_4">tell us anything</a>
                     <ul class="socialbrb">
                         <li><a href="#" alt="facebook_icon"><img class="iconw" src="./socialbarwht/facebook.svg" alt="social media"></a></li>
                         <li><a href="#" alt="twitter_icon"><img  class="iconw" src="./socialbarwht/twitter.svg" alt="social media"></a></li>
                         <li><a href="#" alt="instgram_icon"> <img  class="iconw" src="./socialbarwht/instagram.svg" alt="social media"></a></li>
-                        <li><a href="#" alt="whatapp_icon"> <img  class="iconw" src="./socialbarwht/WhatsApp.svg" alt="social media"> </a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </dialog>
-    <header>
-    <div class="content">
-        <div class="medbx">
-            <nav class="flex">
-                <div class="logo"><a href="./index.html"><img src="./harpenin images and other resources/img/svg's/small yellow logo.svg" alt=" harpenin's logo yellow"></a></div>
-                <div>
-                    <a href="#" class="menu" id="menu">MENU</a>
-                    <!-- you changed the id in this section make sure to update it in all th e other html files -->
-                </div>
-            </nav>
+    <dialog class="modal2">
+        <!-- this is not working dont forget to fix this -->
+        <div class="closebttn"id="closebtn2">
+        <a href="#">close</a>
+    </div>
+        <div class="textbxm2">
             
-            <div class="main">
-                <div class="event_bar" id="nav">
-                    <a href="./index.html"class="eveAtt nu_nm_bold_black_16px" id="navatt"> For Event Attendees</a>
-                    <a href="./host.html"class="eveHost nu_nm_bold_black_16px" id="navhost"> For Event Host</a>
-                </div>
-                <div class="textbx ">
-                    <h1 class="nu_nm_sm_black_40px">Just those events you love, around you!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh scelerisque justo vitae sapien, in. Eu sed dis nisi lectu.</p>
-                    <a href="" class="btn nu_nm_bold_black_18px">JOIN THE WAITLIST</a>
-                </div>
+            <p>Please enter your name and email below(Name, Email)<p>
+                <form action="" method="post">
+                <input type="text" placeholder="E.g oluwa tobi.">
+                <input type="email" placeholder="E.g tobi890@gmail.com">
+                <a href="#" type="submit"><img src="./svg/Overlay join waitlist btn.svg" alt=""></a>
+                </form>
+                
         </div>
-        <div class="socialBar">
-            <div class="iconbx">
-                <ul class="socialbr">
-    <!-- look for the svg logos of this ones and the ones at the bottom of the page -->
-                    <li><a href="#" alt="facebook_icon"><img class="icon" src="./svg/facebook.svg" alt="social media"></a></li>
-                    <li><a href="#" alt="twitter_icon"><img  class="icon" src="./svg/twitter.svg" alt="social media"></a></li>
-                    <li><a href="#" alt="instgram_icon"> <img  class="icon" src="./svg/instagram.svg" alt="social media"></a></li>
-                    <li><a href="#" alt="whatapp_icon"> <img  class="icon" src="./svg/ic_round-whatsapp.svg" alt="social media"> </a></li>
-                </ul>
+    </dialog>
+    <dialog class="modal4 modal2">
+        <!-- this is not working dont forget to fix this -->
+        <div class="closebttn"id="closebtn4">
+        <a href="#">close</a>
+    </div>
+        <div class="textbxm2">
+            
+            <form action="" method="post">
+                <input type="email" placeholder="Campus events, Get togethers">
+                <input type="email" placeholder="Campus events, Get togethers">
+                <input type="email" placeholder="Campus events, Get togethers">
+                <a href="#" type="submit"><img src="./svg/Feedback btn.svg" alt=""></a>
+                </form>
+                
+        </div>
+    </dialog>
+    <header>
+        <div class="content">
+            <div class="medbx">
+                <nav class="flex">
+                    <div class="logo"><a href="./index.html"><img src="./harpenin images and other resources/img/svg's/small yellow logo.svg" alt=" harpenin's logo yellow"></a></div>
+                    <div>
+                        <a href="#" class="menu" id="menu">MENU</a>
+                        <!-- you changed the id in this section make sure to update it in all th e other html files -->
+                    </div>
+                </nav>
+                
+                <div class="main">
+                    <div class="event_bar" id="nav">
+                        <a href="./index.html"class="eveAtt nu_nm_bold_black_16px" id="navatt"> For Event Attendees</a>
+                        <a href="./host.html"class="eveHost nu_nm_bold_black_16px" id="navhost"> For Event Host</a>
+                    </div>
+                    <div class="textbx ">
+                        <!-- <h1 class="nu_nm_sm_black_40px"><span class="animaspan"> Just</span> <span class="animaspan">those</span> <span class="animaspan">events</span> <span class="animaspan">you </span><span class="animaspan">love,</span> <span class="animaspan">around </span><span class="animaspan">you!</span></h1> -->
+                        <h1 class="hiddenscroll1 nu_nm_sm_black_40px">Just those events you love, around you!</h1>
+                        <p>We’re making the perfect platform for you to level up your career, grow your network and enjoy the moment through events!</p>
+                        <a href="#" class="btn nu_nm_bold_black_18px" id="menu2">JOIN THE WAITLIST</a>
+                    </div>
+            </div>
+            <div class="socialBar">
+                <div class="iconbx iconbx1">
+                    <ul class="socialbr">
+        <!-- look for the svg logos of this ones and the ones at the bottom of the page -->
+                        <li><a href="#" alt="facebook_icon"><img class="icon" src="./svg/facebook.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="twitter_icon"><img  class="icon" src="./svg/twitter.svg" alt="social media"></a></li>
+                        <li><a href="#" alt="instgram_icon"> <img  class="icon" src="./svg/instagram.svg" alt="social media"></a></li>
+                        <!-- <li><a href="#" alt="whatapp_icon"> <img  class="icon" src="./svg/ic_round-whatsapp.svg" alt="social media"> </a></li> -->
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-        <div class=" stimgbx">
-            <!-- <img src="#" alt="imgage of a group of black queens" > -->
-            <div class="overlay"></div>
+            <div class=" stimgbxx">
+                <!-- <img src="#" alt="imgage of a group of black queens" > -->
+                <div class="overlay"></div>
+            </div>
         </div>
-    </div>
-</header>
-<section>
-    <div class="boderarea">
-      <div class="pack"> 
-           <h3 class="nu_bold_sm_licorice_35px"> Never miss events you love! </h3>
-            <a href="#">Click to read more<a>
-        </div>     
-      <div class="pack "> 
-          <div class="purpleback">
-<span>this is helping the purple back </span>
-          </div>
-          <h3 class="nu_bold_sm_licorice_35px "> Engage and be part of events! </h3>
-          <a href="#">Click to read more<a>
-        </div>     
-      <div class="pack"> 
-           <h3 class="nu_bold_sm_licorice_35px"> Post events to awaiting audience! </h3>
-            <a href="#">Click to read more<a>
-        </div>     
-    </div>     
-                  
-            </section>
-<div class="linkbx">
+    </header>
+
+            <div class="boderarea">
+                <div class="pack boxboder padleft">
+                    <div class="purpleback menu5">
+                        <div class="space">
+                            <h3 class="nu_bold_sm_licorice_35px "> Engage with your audience </h3>
+                            <p>Yep, we know you’re not going to be interested in all types of events, and that’s why we’re going all in to add features just for this.</p>
+                            <a class="menu5"> <span> Click to read more &#8594;</span><a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pack ">
+                    <div class="purpleback menu6">
+                        <div class="space">
+                            <h3 class="nu_bold_sm_licorice_35px"> Quality event ticketing! </h3>
+            <p>Yep, we also know... what’s the use of attending events without engaging with others?? For that, we’re making social interactions possible!</p>
+                            <a href="#"> <span> Click to read more &#8594;</span><a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pack boxboder padright" >
+                    <div class="purpleback menu7">
+
+                        <div class="space">
+                            <h3 class="nu_bold_sm_licorice_35px"> Post events to awaiting audience! </h3>
+                            <p>A platform to get those individuals who are totally into type of event you’re hosting is what we're offering, for free! </p>
+                            <a href="#"> <span> Click to read more &#8594;</span><a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>     
              <a href="#" class="purplelink"></a> 
-           
-</div>
-
-
-<section class="hosttrybe">
+<section class="hosttrybe hiddenscroll1">
     <!-- the background picture in this sectiot import it exactly like the first one then use th eexact styling for it -->
         <div class="textbox">
             <h3>
@@ -121,6 +233,14 @@
     <img src="./pngs/wordimg.png" alt="">
     <p>“The 21st centuty way of hosting events”</p>
     <span>-Harpenin team</span>
+    <span>
+    <span class="menu3"></span>
+    <span id="closebtn3"></span>
+    <!-- <span id="menu4"></span> -->
+    <!-- <span id="closebtn4"></span> -->
+    <span class="menu3"></span>
+    <span class="menu3"></span>
+</span>
 </div>
 
 </section>
@@ -133,19 +253,21 @@
     
     </div>
     <div class="linkbx">
-    <a href="#" class="yellbtn">JOIN THE WAIT LIST</a>
-    <a href="#" class="blackbtn"> TELL US ANYTHING</a>
+    <a href="#" class="yellbtn" id="menu_2">JOIN THE WAIT LIST</a>
+    <a class="blackbtn" id="menu4"> TELL US ANYTHING</a>
     </div>
-    <div class="socialBar">
-        <div class="iconbx">
-            <ul class="socialbrb">
-                <li><a href="#" alt="facebook_icon"><img class="iconw" src="./socialbarwht/facebook.svg" alt="social media"></a></li>
-                <li><a href="#" alt="twitter_icon"><img  class="iconw" src="./socialbarwht/twitter.svg" alt="social media"></a></li>
-                <li><a href="#" alt="instgram_icon"> <img  class="iconw" src="./socialbarwht/instagram.svg" alt="social media"></a></li>
-                <li><a href="#" alt="whatapp_icon"> <img  class="iconw" src="./socialbarwht/WhatsApp.svg" alt="social media"> </a></li>
-            </ul>
-        </div>
-    </div>
+                <div class="socialBar">
+                    <div class="iconbx">
+                        <ul class="socialbrb">
+                            <li><a href="#" alt="facebook_icon"><img class="iconw" src="./socialbarwht/facebook.svg" alt="social media"></a></li>
+                            <li><a href="#" alt="twitter_icon"><img  class="iconw" src="./socialbarwht/twitter.svg" alt="social media"></a></li>
+                            <li><a href="#" alt="instgram_icon"> <img  class="iconw" src="./socialbarwht/instagram.svg" alt="social media"></a></li>
+                            <!-- <li><a href="#" alt="whatapp_icon"> <img  class="iconw" src="./socialbarwht/WhatsApp.svg" alt="social media"> </a></li> -->
+                        </ul>
+                    </div>
+                </div>
 </footer>
+<script type="text/javascript" src="./functionality.js"></script>
+
 </body>
 </html>
