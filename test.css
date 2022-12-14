@@ -121,7 +121,7 @@ dialog {
   border: none;
   height: 100vh;
   margin: 0;
-  padding: 0;
+  padding-left: 3rem;
   overflow: hidden;
 }
 dialog .closebttn {
@@ -1332,7 +1332,8 @@ footer .linkbx .blackbtn {
 @media (min-width: 768px) {
   footer .linkbx .yellbtn,
 footer .linkbx .blackbtn {
-    justify-content: center;
+    font-size: var(--fs-xs);
+    padding: 1rem;
   }
 }
 footer .glogo {

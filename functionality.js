@@ -2,8 +2,10 @@ const progressBar = document.getElementsByClassName('progress-bar')[0]
 let loader = document.getElementsByClassName('loader')
 let loaderbg = document.getElementById('loaderbg')
   window.addEventListener('load', ()=>{
-  loaderbg.style.display = "none"
-  console.log("pagelloaded")
+      loaderbg.style.display = "none"
+      console.log("pagelloaded")
+    
+
 })
 
 
