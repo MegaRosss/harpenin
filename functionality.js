@@ -192,3 +192,27 @@ const oneobserver = new IntersectionObserver(
     if(entry.isIntersecting){entry.target.classList.add('show')}})})
 const hiddenElements1 = document.querySelectorAll(".hiddenscroll1")
 hiddenElements1.forEach((el) => oneobserver.observe(el))
+
+
+
+//This is the code for the interactive mouse-following section
+
+const scrollingDiv = document.querySelector('.scrolling-block')
+const borderAreaCont = document.querySelector('.boderarea-container')
+
+const Mousemove = (e) => {
+  scrollingDiv.style.left = e.pageX + 'px';
+  // scrollingDiv.style.
+  scrollingDiv.style.opacity = '1';
+
+}
+const Mouseout = (e) => {
+  scrollingDiv.style.left = e.pageX + 'px';
+  // scrollingDiv.style.
+  scrollingDiv.style.opacity = '0';
+
+}
+borderAreaCont.addEventListener('mousemove', Mousemove);
+
+borderAreaCont.addEventListener('mouseout', Mouseout)
+
