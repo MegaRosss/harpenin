@@ -1384,7 +1384,7 @@ nav {
         margin-inline: 1rem;
         padding-block: 2.5rem 15rem;
         //  background-color: var(--pixie-powder);
-        background-color: #692bd348;
+        // background-color: #692bd348;
 
         h5 {
             font-family: var(--ff-primary);
@@ -1638,14 +1638,12 @@ nav {
 
 //  }
 footer {
-    padding: 50px;
+    padding: 20px;
     span {
         display: none;
     }
     background: var(--black);
-    .socialBar {
-        // padding-bottom: 50px;
-    }
+   
     .linkbx {
         flex-direction: row;
 
@@ -1653,7 +1651,8 @@ footer {
         .blackbtn {
             margin: 0 7.5px;
             font-size: var(--fs-xxs);
-            padding: 1rem .5em ;
+            padding: 1rem .8em ;
+            font-weight: 500;
 
             @media (min-width: 768px) {
                 font-size: var(--fs-xs);
@@ -1728,6 +1727,7 @@ footer {
     padding: 5em 2em;
     overflow-x: auto;
     min-height: 10em;
+    // background-image: url(./);
     p {
         background-color: #e9d2fd;
 
@@ -1744,7 +1744,7 @@ footer {
     img {
         width: 5rem;
         align-self: center;
-        // padding-bottom: 8rem;
+        padding-bottom: 2rem;
     }
     span {
         span {

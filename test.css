@@ -1064,7 +1064,6 @@ nav .menu {
   text-align: left;
   margin-inline: 1rem;
   padding-block: 2.5rem 15rem;
-  background-color: rgba(105, 43, 211, 0.2823529412);
 }
 .hostttrybe .textbox h5 {
   font-family: var(--ff-primary);
@@ -1314,7 +1313,7 @@ nav .menu {
 }
 
 footer {
-  padding: 50px;
+  padding: 20px;
   background: var(--black);
 }
 footer span {
@@ -1327,7 +1326,8 @@ footer .linkbx .yellbtn,
 footer .linkbx .blackbtn {
   margin: 0 7.5px;
   font-size: var(--fs-xxs);
-  padding: 1rem 0.5em;
+  padding: 1rem 0.8em;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   footer .linkbx .yellbtn,
@@ -1408,6 +1408,7 @@ footer .blackbtn:hover {
 .wrods img {
   width: 5rem;
   align-self: center;
+  padding-bottom: 2rem;
 }
 .wrods span span {
   display: none;
