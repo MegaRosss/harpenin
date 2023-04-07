@@ -124,7 +124,7 @@ ul {
   z-index: 9999999;
   width: 100vw;
   height: 100vh;
-  display: none;
+  display: grid;
   place-content: center;
   background-color: var(--white-lilac);
 }
