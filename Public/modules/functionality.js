@@ -3,12 +3,15 @@
 let loader = document.getElementsByClassName('loader')
 let loaderbg = document.getElementById('loaderbg')
 
-window.addEventListener('load', () => {
+window.addEventListener("DOMContentLoaded", () => {
   function removeLoader() {
     loaderbg.classList.add('removed');
   }
-  setTimeout(removeLoader, 1000);
+  // setTimeout(removeLoader, 1000);
+ removeLoader()
+
 })
+
 
 // code for interactivity of modal action buttons
 
