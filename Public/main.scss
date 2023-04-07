@@ -145,7 +145,8 @@ ul {
     z-index: 9999999;
     width: 100vw;
     height: 100vh;
-    display: grid;
+    // display: grid;
+    display: none;
     place-content: center;
     background-color: var(--white-lilac);
 
