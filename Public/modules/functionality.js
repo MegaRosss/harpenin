@@ -7,8 +7,9 @@ window.addEventListener("DOMContentLoaded", () => {
   function removeLoader() {
     loaderbg.classList.add('removed');
   }
-  // setTimeout(removeLoader, 1000);
- removeLoader()
+  // fix this the javascript is not getting loaded so the remove loader fuction never runs
+  setTimeout(removeLoader(), 1000);
+//  removeLoader()
 
 })
 
